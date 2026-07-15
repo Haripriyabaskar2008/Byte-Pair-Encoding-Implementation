@@ -129,6 +129,42 @@ Technologies Used:
                 │      End      │
                 └───────────────┘
 ```
+ 🔄 Algorithm Workflow:
+flowchart TD
+    A([Start])
+    B[Read corpus.txt]
+    C[Preprocess Text]
+    D[Split Words into Characters + </w>]
+    E[Count Word Frequencies]
+    F[Find Adjacent Symbol Pairs]
+    G[Count Pair Frequencies]
+    H[Select Most Frequent Pair]
+    I[Merge Selected Pair]
+    J[Update Vocabulary]
+    K{More Merges?}
+    L[Store Merge Rules]
+    M[Build Final Vocabulary]
+    N[Encode New Words]
+    O[Decode Tokens]
+    P([End])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K -- Yes --> F
+    K -- No --> L
+    L --> M
+    M --> N
+    N --> O
+    O --> P
+```
 learning Outcome:
 Through this project, the complete working process of the Byte Pair Encoding algorithm was implemented and understood, including vocabulary learning, subword tokenization, and encoding/decoding of words. This project provides a strong foundation for understanding tokenization techniques used in modern Large Language Models (LLMs).
 👩‍💻 Author
