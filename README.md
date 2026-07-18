@@ -169,7 +169,9 @@ learning Outcome:
 Through this project, the complete working process of the Byte Pair Encoding algorithm was implemented and understood, including vocabulary learning, subword tokenization, and encoding/decoding of words. This project provides a strong foundation for understanding tokenization techniques used in modern Large Language Models (LLMs).
 
 
-                                  Autoregressive Causal Language Model
+
+
+                                Autoregressive Causal Language Model
 Project Overview:
 This project implements the basic pipeline of an Autoregressive Causal Language Model (ARLM) using Python and NumPy. The model predicts the next token in a sequence based only on previously seen tokens and does not access future tokens during prediction.
 The project demonstrates how the BPE tokenizer connects with an autoregressive language model. The text is first converted into token IDs, which are then processed through embeddings, positional encoding, causal masking, self-attention, a linear layer, and softmax to generate the next-token prediction.
